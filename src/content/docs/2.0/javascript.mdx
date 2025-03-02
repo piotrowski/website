@@ -20,11 +20,16 @@ You can include the JavaScript files on your page by adding them to the `<head>`
 
 ## Installation via NPM
 
-You can import the JavaScript from `franken-ui`, which you installed earlier, into your `app.js` file.
+You can import the JavaScript from `franken-ui`, which you installed earlier, into your `app-defer.js` file.
 
 ```javascript
 import "franken-ui/js/core.iife";
 import "franken-ui/js/icon.iife";
+```
+
+Inside your <head> tag you should `defer` script.
+```html
+<script src="/assets/app-defer.js" defer></script>
 ```
 
 ## UIkit and reactive JavaScript frameworks
